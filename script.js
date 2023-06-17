@@ -1,9 +1,25 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById("nav");
+const navSkipLayer = document.getElementById("nav-skip-layer");
 const toggleIcon = document.getElementById("toggle-icon");
 const textBox = document.getElementById("text-box");
 const images = document.getElementsByTagName("img");
 const yearsOfExperience = new Date().getFullYear() - 2010;
+
+function showNav() {
+  nav.classList.remove("hidden");
+  nav.classList.add("visible-flex");
+  navSkipLayer.classList.remove("hidden");
+  navSkipLayer.classList.add("visible-flex");
+}
+
+function hideNav() {
+  console.log("cliquei");
+  nav.classList.remove("visible-flex");
+  nav.classList.add("hidden");
+  navSkipLayer.classList.add("hidden");
+  navSkipLayer.classList.remove("visible-flex");
+}
 
 function calculateExperience() {
   console.log("yearsOfExperience", yearsOfExperience);
