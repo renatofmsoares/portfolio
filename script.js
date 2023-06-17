@@ -22,6 +22,7 @@ function changeThemeOfImages() {
 }
 
 function darkMode() {
+  toggleSwitch.checked = true;
   localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
   nav.style.backgroundColor = "rgb(0 0 0 / 50%)";
@@ -32,6 +33,7 @@ function darkMode() {
 }
 
 function lightMode() {
+  toggleSwitch.checked = false;
   localStorage.setItem("theme", "light");
   document.documentElement.setAttribute("data-theme", "light");
   nav.style.backgroundColor = "rgb(255 255 255 / 50%)";
@@ -56,10 +58,8 @@ if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
 
   if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
     darkMode();
   } else {
-    toggleSwitch.checked = false;
     lightMode();
   }
 } else {
