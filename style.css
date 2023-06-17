@@ -285,3 +285,10 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
 }
+  
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+}
