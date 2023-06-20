@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is frontend programmer Renato Soares' portfolio. It features some developed projects and has a dark mode and a light mode for viewing."
+    />
     <title>Renato's Space</title>
     <link rel="icon" type="image/png" href="favicon.svg" />
     <link
@@ -24,15 +28,15 @@
     </div>
 
     <div id="nav-skip-layer" class="hidden" onclick="hideNav()"></div>
-    <a alt="navigation-button" class="nav-button" onclick="showNav()">
+    <a alt="navigation button" class="nav-button" onclick="showNav()">
       <i class="fa-solid fa-bars"></i>
     </a>
 
     <nav id="nav">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
+      <a href="#home" alt="navigate to home section">HOME</a>
+      <a href="#about" alt="navigate to about section">ABOUT</a>
+      <a href="#projects" alt="navigate to projects section">PROJECTS</a>
+      <a href="#contact" alt="navigate to contact section">CONTACT</a>
     </nav>
 
     <section id="home">
@@ -60,10 +64,22 @@
         </p>
         <p>
           Please feel free to add me on
-          <a href="https://www.linkedin.com/in/renatofmsoares/">LinkedIn</a>,
-          follow me on <a href="https://github.com/renatofmsoares">GitHub</a> or
-          maybe challenge me to a game on
-          <a href="https://friend.chess.com/Uy2Ze">Chess.com</a>!
+          <a
+            href="https://www.linkedin.com/in/renatofmsoares/"
+            alt="link to linkedin profile"
+            >LinkedIn</a
+          >, follow me on
+          <a
+            href="https://github.com/renatofmsoares"
+            alt="link to github profile"
+            >GitHub</a
+          >
+          or maybe challenge me to a game on
+          <a
+            href="https://friend.chess.com/Uy2Ze"
+            alt="link to Chess.com profile"
+            >Chess.com</a
+          >!
         </p>
       </div>
     </section>
@@ -72,21 +88,39 @@
       <h1>Projects</h1>
       <div class="projects-container">
         <div class="image-container">
-          <a href="https://renatofmsoares.github.io/quote-generator/">
+          <a
+            href="https://renatofmsoares.github.io/quote-generator/"
+            aria-label="link to quote-generator project"
+          >
             <h2>Quote Generator</h2>
-            <img src="img/quote-generator.png" alt="" />
+            <img
+              alt="screenshot of quote generator project"
+              src="img/quote-generator.webp"
+            />
           </a>
         </div>
         <div class="image-container">
-          <a href="https://renatofmsoares.github.io/joke-teller/">
+          <a
+            href="https://renatofmsoares.github.io/joke-teller/"
+            aria-label="link to joke teller project"
+          >
             <h2>Joke Teller</h2>
-            <img src="img/joke-teller.png" alt="" />
+            <img
+              src="img/joke-teller.webp"
+              alt="screenshot of joke teller project"
+            />
           </a>
         </div>
         <div class="image-container">
-          <a href="https://renatofmsoares.github.io/infinite-scroll/">
+          <a
+            href="https://renatofmsoares.github.io/infinite-scroll/"
+            aria-label="link to infinite scroll project"
+          >
             <h2>Infinite Scroll</h2>
-            <img src="img/infinite-scroll.png" alt="" />
+            <img
+              src="img/infinite-scroll.webp"
+              alt="screenshot of infinite scroll project"
+            />
           </a>
         </div>
       </div>
@@ -95,12 +129,44 @@
     <section>
       <h1>Button Styles</h1>
       <div class="buttons">
-        <button class="primary">Primary</button>
-        <button class="secondary">Secondary</button>
-        <button class="primary" disabled>Disabled</button>
-        <button class="outline">Outline</button>
-        <button class="secondary outline">Alt Outline</button>
-        <button class="outline" disabled>Disabled</button>
+        <button
+          class="primary"
+          alt="Illustrative button to show what a button looks like with primary color."
+        >
+          Primary
+        </button>
+        <button
+          class="secondary"
+          alt="Illustrative button to show what a button looks like with secondary color."
+        >
+          Secondary
+        </button>
+        <button
+          class="primary"
+          alt="Illustrative button to show what a disabled button looks like."
+          disabled
+        >
+          Disabled
+        </button>
+        <button
+          class="outline"
+          alt="Illustrative button to show what a primary outline button looks like."
+        >
+          Outline
+        </button>
+        <button
+          class="secondary outline"
+          alt="Illustrative button to show what a secondary outline button looks like."
+        >
+          Alt Outline
+        </button>
+        <button
+          class="outline"
+          alt="Illustrative button to show what an outline disabled button looks like."
+          disabled
+        >
+          Disabled
+        </button>
       </div>
     </section>
 
@@ -108,17 +174,26 @@
       <h1>Contact</h1>
       <div class="contacts-container">
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/renatofmsoares/">
+          <a
+            href="https://www.linkedin.com/in/renatofmsoares/"
+            aria-label="link to Renato's linkedin profile"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
         <div class="social-icons">
-          <a href="https://github.com/renatofmsoares">
+          <a
+            href="https://github.com/renatofmsoares"
+            aria-label="link to Renato's github profile"
+          >
             <i class="fab fa-github"></i>
           </a>
         </div>
         <div class="social-icons">
-          <a href="https://friend.chess.com/Uy2Ze">
+          <a
+            href="https://friend.chess.com/Uy2Ze"
+            aria-label="link to Renato's Chess.com profile"
+          >
             <i class="fa-solid fa-chess-board"></i>
           </a>
         </div>
